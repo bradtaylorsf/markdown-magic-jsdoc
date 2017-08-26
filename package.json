@@ -1,6 +1,6 @@
 {
   "name": "markdown-magic-jsdoc",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A plugin for markdown-magic that parses jsdoc style comments as a transform",
   "main": "index.js",
   "scripts": {
