@@ -33,7 +33,7 @@ const JSDOC = function (content, _options = {}, config) {
   if (doc.length > 0) {
     return doc;
   }
-  return `*THERE WAS AN ERROR PROCESSING ${files}*`;
+  return `*THERE WAS AN ERROR PROCESSING ${options.files}*`;
 }
 
 module.exports = (obj) => JSDOC;
