@@ -29,6 +29,9 @@ const defaults = {
 const JSDOC = function (content, _options = {}, config) {
   const options = Object.assign({}, defaults, _options);
 
+  // this must be coerced to an int or jsdoc2md becomes confused
+  options['heading-depth'] = parseInt(options['heading-depth'], 10) || 2;
+
   const doc = jsdoc2md.renderSync(options);
   if (doc.length > 0) {
     return doc;
